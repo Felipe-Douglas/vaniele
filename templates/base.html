@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsivo.css' %}">
+</head>
+<body>
+    <header class="wrapper-hero">
+        <div class="menu">
+            <img src="{% static 'img/NINNA CINZA (1).png' %}" class="hero-logo" alt="">
+            <nav class="navegacao">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+
+        <h1 class="hero-title">Gestão de Eventos</h1>
+
+        
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer class="wrapper-footer">
+        <div class="wrapper-footer__info">
+            <img src="{% static 'img/NINNA CINZA (1).png' %}" alt="Logo Ninna hub">
+            <div class="wrapper-footer__info--geral">
+                <ul class="info--localizacao__list">
+                    <li class="info--localizacao__item localizacao">
+                        Av. Dom Manuel, 1020 - Centro, Fortaleza - CE, 60060-090
+                    </li>
+                    <li class="info--localizacao__item telefone">
+                        (85) 3211-4201
+                    </li>
+                </ul>
+            </div>
+            <div class="wrapper-footer__info--sociais">
+                <ul class="info--sociais__list">
+                    <li class="info--sociais__item instagram">
+                        Instagram
+                    </li>
+                    <li class="info--sociais__item youtube">
+                        Youtube
+                    </li>
+                    <li class="info--sociais__item linkedin">
+                        LinkedIn
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper-footer__copyright">
+            Todos os direitos reservados &copy; 2022
+        </div>
+    </footer>
+
+    <script src="{% static 'js/bootstrap.min.js' %} "></script>
+    <script src="https://kit.fontawesome.com/8d28bc11a0.js" crossorigin="anonymous"></script>
+</body>
+</html>
